@@ -1,7 +1,7 @@
 <template>
   <div>
     <img alt="Vue logo" src="./assets/logo.png" /> 
-    <HelloWorld msg="Welcome to Seongho App" />
+    <HelloWorld msg="Welcome to MY App" />
   </div>
 </template>
 
