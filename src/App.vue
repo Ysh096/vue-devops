@@ -8,13 +8,13 @@
           ><span id="closing">입니다.</span>
         </div>
       </div>
-      <div id="birthday">[생년월일] 1996.04.09</div>
+      <div id="birthday">생년월일: 1996.04.09</div>
       <div id="contact">
-        [이메일 / 연락처] skk7541@gmail.com / 010-6681-4267
+        이메일: skk7541@gmail.com
         <br />
-        [github] https://github.com/Ysh096/
+        깃허브: https://github.com/Ysh096/
         <br />
-        [blog] https://velog.io/@ysh096
+        블로그: https://velog.io/@ysh096
       </div>
     </div>
 
@@ -65,17 +65,20 @@ export default {
     // codes for button click effect right after loading
     var btn_num = "btn_" + String(this.currentItem);
     var btn = document.getElementById(btn_num);
-    btn.style.borderBottom = "1px solid black";
+    btn.style.borderBottom = "2px solid #75abbf";
+    btn.style.color = "#75abbf";
   },
   updated() {
     // codes for button click effect
     var btn_num = "btn_" + String(this.currentItem);
     var btn = document.getElementById(btn_num);
-    btn.style.borderBottom = "1px solid black";
+    btn.style.borderBottom = "2px solid #75abbf";
+    btn.style.color = "#75abbf";
 
     var btn_last_num = "btn_" + String(this.lastItem);
     var btn_last = document.getElementById(btn_last_num);
-    btn_last.style.borderBottom = "1px solid white";
+    btn_last.style.borderBottom = "2px solid white";
+    btn_last.style.color = "black";
   },
 };
 </script>
@@ -106,6 +109,14 @@ export default {
   color: #2c3e50;
   margin-top: 30px;
 }
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 
 #slogun {
   font-size: 24px;
@@ -116,6 +127,7 @@ export default {
 #my_name {
   font-size: 36px;
   font-weight: bold;
+  /* color: #008d62; */
   margin: 10px;
 }
 
@@ -132,7 +144,6 @@ export default {
 
 #tabs {
   display: flex;
-  margin: 24px;
   border-color: black;
   justify-content: center;
 }
@@ -150,6 +161,13 @@ export default {
 
 #tabs > button:hover {
   cursor: pointer;
-  border-bottom: 1px solid black;
+  color: #75abbf;
+}
+
+.tab-content {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
 }
 </style>
